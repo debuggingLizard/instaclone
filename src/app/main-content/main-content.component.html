@@ -1,0 +1,10 @@
+<section>
+    @for (item of feedData.feed; track $index) {
+    <div class="posting">
+        <p>{{item.userName}}</p>
+        <img src="./assets/img/{{item.img}}" alt="{{item.img}}">
+        <p class="likes">{{item.likes}}</p>
+    </div>
+
+    }
+</section>
