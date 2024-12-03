@@ -7,3 +7,26 @@ body {
     background-color: rgb(1, 1, 19);
     color: whitesmoke;
 }
+
+section {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: rgb(1, 1, 19);
+    align-self: flex-start;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    padding: 8px;
+
+    &:hover {
+        transition: 0.2s;
+        background-color: #a8be2b;
+        color: whitesmoke;
+    }
+}
