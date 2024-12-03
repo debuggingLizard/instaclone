@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { GallerydataService } from '../gallerydata.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss',
 })
