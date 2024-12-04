@@ -8,12 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './single-post.component.scss',
 })
 export class SinglePostComponent {
-  @Input() posting = {
-    userName: 'Hans',
-    img: 'banana.jpg',
-    likes: 96,
-    liked: true,
-  };
+  @Input() posting!:{userName: string, img: string, likes: number, liked: boolean,};
 
   likePosting(bool: boolean) {
     this.posting.liked = bool;
