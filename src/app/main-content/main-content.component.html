@@ -1,19 +1,6 @@
 <section>
-    @for (item of feedData.feed; track $index) {
-    <div class="posting">
-        <p>{{item.userName}}</p>
-        <img src="./assets/img/{{item.img}}" alt="{{item.img}}">
-
-        <div class="likes-container">
-            <p>{{item.likes}}</p>
-
-            @if (item.liked) {
-                <img (click)="likePosting($index, false)" src="./assets/img/heart-red.png" alt="post has been liked">
-            } @else {
-                <img (click)="likePosting($index, true)" src="./assets/img/heart-black.png" alt="post has not been liked">
-            }
-        </div>
-    </div>
+    @for (posting of feedData.feed; track $index) {
+    <app-single-post [posting]="posting"></app-single-post>
     }
 
 

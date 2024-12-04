@@ -1,0 +1,14 @@
+<div class="posting">
+    <p>{{posting.userName}}</p>
+    <img src="./assets/img/{{posting.img}}" alt="{{posting.img}}">
+
+    <div class="likes-container">
+        <p>{{posting.likes}}</p>
+
+        @if (posting.liked) {
+        <img (click)="likePosting(false)" src="./assets/img/heart-red.png" alt="post has been liked">
+        } @else {
+        <img (click)="likePosting(true)" src="./assets/img/heart-black.png" alt="post has not been liked">
+        }
+    </div>
+</div>

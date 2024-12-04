@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { GallerydataService } from '../gallerydata.service';
 import { RouterModule } from '@angular/router';
+import { SinglePostComponent } from './single-post/single-post.component';
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, SinglePostComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss',
 })

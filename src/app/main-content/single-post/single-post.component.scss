@@ -1,0 +1,25 @@
+.posting {
+  > p:first-of-type {
+    font-size: 20px;
+  }
+
+  > img {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .likes-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+
+    > img {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+    }
+  }
+}
